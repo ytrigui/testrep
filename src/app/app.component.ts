@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { TopbarComponent } from './components/topbar/topbar.component';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  standalone: true,
+  imports: [RouterOutlet, TopbarComponent ],
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'product-store-frontend';
-}
+export class AppComponent {}
